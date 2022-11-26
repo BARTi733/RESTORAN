@@ -1,17 +1,84 @@
 body {
-  margin: 0;
+  margin: 0; /*убираем отступы по бокам*/
+  font-family: "Open Sans", sans-serif;
 }
 
 .container {
-  margin: 0px 166px;
+  margin: 0px 166px; /*св и низ 0px слева,справа 166*/
 }
 
 .header {
+  /*главная картинка экрана*/
   background: url(https://img5.goodfon.ru/original/1366x768/e/8e/sushi-moreprodukty-ris-chernyi-fon-rice-japan-roll-sushi.jpg);
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 100vh; /*блок будет растянут на весь экран*/
+  background-repeat: no-repeat; /* не повторять наше изображение*/
+  background-size: cover; /*растягивается картинка ровномерно на весь экран*/
 }
-p {
-  color: red;
+
+.header-menu {
+  padding-top: 50px; /*внутрений отступ нашего меню*/
+  display: flex; /*в одну линию*/
+  align-items: center; /*выравниваем по центру*/
+  justify-content: space-around;
+}
+
+.nav-item {
+  color: #fff;
+  text-decoration: none; /* Убираем подчеркивание у ссылок*/
+  font-weight: 700; /*толщина*/
+  font-size: 14px; /*размер*/
+  margin-right: 25px;
+  transition: color 0.5s linear;
+}
+
+.nav-item:hover {
+  color: rgb(216, 21, 21);
+}
+
+.cart {
+  border-right: 1px solid #ffffff; /*делаем вертикальную палку*/
+  padding-right: 21px;
+  height: 50px;
+  position: relative; /*родитель для cart-img*/
+}
+
+.cart-img {
+  position: absolute; /*иконка не зависит не откого располжение*/
+  top: 18px;
+  right: 8px;
+}
+
+.num {
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+  transition: color 0.5s linear;
+}
+
+.num:hover {
+  color: rgb(224, 13, 13);
+}
+
+.phone-text {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.phone-holder {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  background-color: #e75b0f;
+  text-decoration: none;
+  color: #fff;
+  padding: 14px 18px;
+  font-weight: 700;
+  transition: background-color 0.2s linear;
+}
+
+.button:hover {
+  background-color: rgb(167, 128, 11);
 }
